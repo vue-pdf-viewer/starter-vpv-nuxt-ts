@@ -1,75 +1,96 @@
-# Nuxt 3 Minimal Starter
+# VPV Starter Toolkit in Nuxt 3 (SSR)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to the VPV starter toolkit! This repository provides a comprehensive guide on how to use VPV within Nuxt 3, utilizing the composition API and TypeScript. This repo showcases how VPV can be integrated and demonstrates its core functionalities.
 
-## Setup
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Project Setup](#project-setup)
+  - [Running the Example Project](#running-the-example-project)
+- [Examples](#examples)
 
-Make sure to install the dependencies:
+## Installation
+
+To get started with this repository, clone it to your local machine and install the dependencies:
 
 ```bash
-# npm
+git clone https://github.com/your-username/starter-vpv-nuxt-ts.git
+cd starter-vpv-nuxt-ts
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Usage
 
-Start the development server on `http://localhost:3000`:
+### Project Setup
 
-```bash
-# npm
-npm run dev
+1. **Clone the Repository**: If you haven't already, clone the repository and navigate into the project directory.
 
-# pnpm
-pnpm run dev
+    ```bash
+    git clone https://github.com/your-username/starter-vpv-nuxt-ts.git
+    cd starter-vpv-nuxt-ts
+    ```
 
-# yarn
-yarn dev
+2. **Install Dependencies**: Install the necessary dependencies using npm or yarn.
 
-# bun
-bun run dev
-```
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
 
-## Production
+### Running the Example Project
 
-Build the application for production:
+This repository includes an example project to demonstrate how to use VPV. To run the example project:
 
-```bash
-# npm
-npm run build
+1. **Serve the Application**: Use the following command to start the development server.
 
-# pnpm
-pnpm run build
+    ```bash
+    npm run serve
+    # or
+    yarn serve
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
 
-# yarn
-yarn build
+2. **Open in Browser**: Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal) to see the example project in action.
 
-# bun
-bun run build
-```
+### Using VPV Components
 
-Locally preview production build:
+Once the example project is running, you can explore the source code to see how VPV components are integrated. Here is a brief overview:
 
-```bash
-# npm
-npm run preview
+1. **Import the component**: Import the desired VPV component in your Vue file.
 
-# pnpm
-pnpm run preview
+    ```js
+    <script setup lang="ts">
+      import { VPdfViewer } from '@vpv/viewer';
+    </script>
+    ```
 
-# yarn
-yarn preview
+2. **Use the component in the template**: Add the VPV component to your template section.
 
-# bun
-bun run preview
-```
+    ```html
+    <template>
+      <div :style="{ width: '1028px', height: '700px'}">
+        <VPdfViewer src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
+      </div>
+    </template>
+    ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Examples
+
+For more detailed examples and usage scenarios, please refer to the `src/App.vue` file in this repository. You can find various example of how to use the VPV component in the following configurations:
+ - Default Toolbar
+ - Without Toolbar
+ - Mobile View
+
+If you want to find out more configurations. Please check the [documentation](https://docs-vue-pdf-viewer.logicspark.com) site.
+
+---
+
+Thank you for using VPV! We hope this toolkit helps you build amazing Vue 3 applications with VPV. If you have any questions or need further assistance, feel free to open an issue or reach out to us. Happy coding!
