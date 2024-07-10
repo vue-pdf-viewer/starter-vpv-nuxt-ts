@@ -1,11 +1,12 @@
 <script lang="ts" setup>
   import { VPdfViewer, useLicense, type ToolbarOptions } from '@vpv/viewer';
-  
+
   const toolbarOptions: Partial<ToolbarOptions> | false = false
   const { data } = await useFetch<{ licenseKey: string }>("/api/vpv-license-key");
   const licenseKey = computed(() => data.value?.licenseKey);
-
-  useLicense({ licenseKey });
+  if (import.meta.client) {
+    useLicense({ licenseKey });
+  }
 </script>
 <template>
   <div :style="{ textAlign: 'center' }">
@@ -19,7 +20,8 @@
       </div>
       <h2>Without Toolbar</h2>
       <div class="pdf-viewer-wrapper">
-        <VPdfViewer src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf"
+        <VPdfViewer
+          src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf"
           :toolbar-options="toolbarOptions" />
       </div>
       <h2>Mobile</h2>
