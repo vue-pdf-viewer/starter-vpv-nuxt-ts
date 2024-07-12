@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     vpvLicenseKey: ''
   },
   build: {
-    transpile: [(ctx) => ctx.isServer ? 'pdfjs-dist': false, (ctx) => ctx.isServer ? '@vpv/viewer': false]
+    transpile: [(ctx) => ctx.isServer ? 'pdfjs-dist': false, (ctx) => ctx.isServer ? '@vue-pdf-viewer/viewer': false]
   }
 })

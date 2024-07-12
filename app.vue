@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { VPdfViewer, useLicense, type ToolbarOptions } from '@vpv/viewer';
+  import { VPdfViewer, useLicense, type ToolbarOptions } from '@vue-pdf-viewer/viewer';
 
   const toolbarOptions: Partial<ToolbarOptions> | false = false
   const { data } = await useFetch<{ licenseKey: string }>("/api/vpv-license-key");

@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@vpv/viewer": "link:@vpv/viewer",
+    "@vue-pdf-viewer/viewer": "latest",
     "nuxt": "^3.12.3",
     "vue": "latest"
   }
