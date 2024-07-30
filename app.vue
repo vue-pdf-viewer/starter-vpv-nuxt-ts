@@ -1,13 +1,3 @@
-<script lang="ts" setup>
-  import { VPdfViewer, useLicense, type ToolbarOptions } from '@vue-pdf-viewer/viewer';
-
-  const toolbarOptions: Partial<ToolbarOptions> | false = false
-  const { data } = await useFetch<{ licenseKey: string }>("/api/vpv-license-key");
-  const licenseKey = computed(() => data.value?.licenseKey);
-  if (import.meta.client) {
-    useLicense({ licenseKey });
-  }
-</script>
 <template>
   <div :style="{ textAlign: 'center' }">
     <ClientOnly>
@@ -15,19 +5,15 @@
       <br />
       <h2>Default Toolbar</h2>
       <div class="pdf-viewer-wrapper">
-        <VPdfViewer
-          src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
+        <PdfViewer />
       </div>
       <h2>Without Toolbar</h2>
-      <div class="pdf-viewer-wrapper">
-        <VPdfViewer
-          src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf"
-          :toolbar-options="toolbarOptions" />
+      <div class="pdf-viewer-wrapper no-toolbar">
+        <PdfViewer :toolbar-options="false" />
       </div>
       <h2>Mobile</h2>
       <div class="pdf-viewer-wrapper-mobile">
-        <VPdfViewer
-          src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
+        <PdfViewer />
       </div>
     </ClientOnly>
   </div>
@@ -44,5 +30,9 @@
     width: 768px;
     height: 700px;
     margin: 0 auto;
+  }
+
+  .no-toolbar :deep(.vpv-variables) {
+    --vpv-toolbar-size: 0px;
   }
 </style>
