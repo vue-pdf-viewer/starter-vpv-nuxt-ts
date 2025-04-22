@@ -1,25 +1,24 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@rollup/rollup-darwin-x64": "^4.19.1",
-    "@vue-pdf-viewer/viewer": "latest",
-    "nuxt": "^3.12.3",
-    "pdfjs-dist": "4.4.168",
-    "typescript": "^5.5.4",
-    "vue": "latest"
-  },
-  "pnpm": {
-    "overrides": {
-      "pdfjs-dist": "4.4.168"
-    }
-  }
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@vue-pdf-viewer/viewer": "latest",
+		"nuxt": "latest",
+		"pdfjs-dist": "4.4.168",
+		"typescript": "^5.5.4",
+		"vue": "latest"
+	},
+	"pnpm": {
+		"overrides": {
+			"pdfjs-dist": "4.4.168"
+		}
+	}
 }
