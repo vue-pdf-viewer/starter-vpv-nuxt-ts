@@ -12,13 +12,13 @@
 	"dependencies": {
 		"@vue-pdf-viewer/viewer": "latest",
 		"nuxt": "latest",
-		"pdfjs-dist": "4.4.168",
+		"pdfjs-dist": "4.10.38",
 		"typescript": "^5.5.4",
 		"vue": "latest"
 	},
 	"pnpm": {
 		"overrides": {
-			"pdfjs-dist": "4.4.168"
+			"pdfjs-dist": "4.10.38"
 		}
 	}
 }
