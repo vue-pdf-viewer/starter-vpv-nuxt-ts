@@ -8,7 +8,7 @@
 <template>
 	<div :style="{ textAlign: 'center' }">
 		<ClientOnly>
-			<h1>VPV Starter Toolkit: Vue + Composition API + TypeScript</h1>
+			<h1>VPV Starter Toolkit: Nuxt + Composition API + TypeScript</h1>
 			<br />
 			<h2>Default Toolbar</h2>
 			<div class="pdf-viewer-wrapper">
