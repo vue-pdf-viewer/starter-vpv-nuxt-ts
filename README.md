@@ -1,6 +1,6 @@
-# VPV Starter Toolkit in Nuxt 3 (SSR)
+# Vue PDF Viewer Starter Toolkit in Nuxt 3 (SSR)
 
-Welcome to the Vue PDF Viewer (VPV) starter toolkit! This repository provides a comprehensive guide on how to use VPV with Nuxt via the Composition API and TypeScript. This repo showcases how VPV can be integrated and rendered as part of a Nuxt project.
+Welcome to the Vue PDF Viewer starter toolkit! This repository provides a comprehensive guide on how to use Vue PDF Viewer with Nuxt via the Composition API and TypeScript. This repo showcases how Vue PDF Viewer can be integrated and rendered as part of a Nuxt project.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -46,7 +46,7 @@ _Remark: For `pnpm`, there is a bit more configuration required which can be fou
 
 ### Running the Example Project
 
-This repo includes an example project to demonstrate how to use VPV. To run the example project:
+This repo includes an example project to demonstrate how to use Vue PDF Viewer. To run the example project:
 
 1. **Serve the Application**: Use the following command to start the development server
 
@@ -62,11 +62,11 @@ This repo includes an example project to demonstrate how to use VPV. To run the 
 
 2. **Open in Browser**: Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal) to see the example project in action
 
-### Using the VPV Component
+### Using the Vue PDF Viewer Component
 
-Once the example project is running, you can explore the source code to see how the VPV component is integrated. Here is a brief overview:
+Once the example project is running, you can explore the source code to see how the Vue PDF Viewer component is integrated. Here is a brief overview:
 
-1. **Import the component**: Import the desired VPV component into your Vue file
+1. **Import the component**: Import the desired Vue PDF Viewer component into your Vue file
 
     ```js
     <script setup lang="ts">
@@ -74,7 +74,7 @@ Once the example project is running, you can explore the source code to see how 
     </script>
     ```
 
-2. **Use the component in the template**: Add the VPV component to your template section
+2. **Use the component in the template**: Add the Vue PDF Viewer component to your template section
 
     ```html
     <template>
