@@ -1,36 +1,27 @@
 # Vue PDF Viewer Starter Toolkit in Nuxt 3 (SSR)
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vue-pdf-viewer/starter-vpv-nuxt-ts)
+
 Welcome to the Vue PDF Viewer starter toolkit! This repository provides a comprehensive guide on how to use Vue PDF Viewer with Nuxt via the Composition API and TypeScript. This repo showcases how Vue PDF Viewer can be integrated and rendered as part of a Nuxt project.
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
   - [Project Setup](#project-setup)
   - [Running the Example Project](#running-the-example-project)
 - [Examples](#examples)
-
-## Installation
-
-To get started, please clone this repo to your local machine and install the dependencies:
-
-```bash
-git clone https://github.com/your-username/starter-vpv-nuxt-ts.git
-cd starter-vpv-nuxt-ts
-npm install
-```
+- [Meta](#meta)
 
 ## Usage
 
 ### Project Setup
 
 1. **Clone the Repository**: If you haven't already, clone the repository and navigate into the project directory.
-
-    ```bash
-    git clone https://github.com/your-username/starter-vpv-nuxt-ts.git
-    cd starter-vpv-nuxt-ts
-    ```
-
-2. **Install Dependencies**: Install the necessary dependencies using npm or yarn
+   ```bash
+   git clone https://github.com/your-username/starter-vpv-nuxt-ts.git
+   cd starter-vpv-nuxt-ts
+   ```
+   
+3. **Install Dependencies**: Install the necessary dependencies using npm, yarn, pnpm or bun
 
     ```bash
     npm install
@@ -42,13 +33,13 @@ npm install
     bun install
     ```
 
-_Remark: For `pnpm`, there is a bit more configuration required which can be found [here](https://docs.vue-pdf-viewer.dev/troubleshooting.html#_3-resolving-peer-dependency-version-mismatch-with-pnpm)._
+_Remark: For `pnpm`, there is a bit more configuration required which can be found [here](https://docs.vue-pdf-viewer.dev/introduction/getting-started.html#install-vue-pdf-viewer)._
 
 ### Running the Example Project
 
-This repo includes an example project to demonstrate how to use Vue PDF Viewer. To run the example project:
+This repository includes an example project to demonstrate Vue PDF Viewer in action:
 
-1. **Serve the Application**: Use the following command to start the development server
+1. **Start the Development Server**: Use the following command to start the development server
 
     ```bash
     npm run dev
@@ -94,6 +85,10 @@ For more examples, please refer to the `src/App.vue` file in this repository:
 _Remark: If you would like more examples, feel free open an issue._
 
 For more configurations, please check the [documentation](https://docs.vue-pdf-viewer.dev) site.
+
+## Meta
+- Homepage: [https://www.vue-pdf-viewer.dev](https://www.vue-pdf-viewer.dev)
+- Docs: [https://docs.vue-pdf-viewer.dev](https://docs.vue-pdf-viewer.dev)
 
 ---
 
