@@ -10,6 +10,7 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
+		"@vue-pdf-viewer/annotation": "latest",
 		"@vue-pdf-viewer/viewer": "latest",
 		"nuxt": "latest",
 		"pdfjs-dist": "4.10.38",
