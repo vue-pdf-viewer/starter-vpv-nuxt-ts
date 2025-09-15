@@ -23,7 +23,8 @@
 					<PdfViewer />
 				</div>
 				<AppPdfViewer
-					title="Shared Component"
+					title="Default Toolbar with Annotation"
+					annotated-enabled
 					src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" />
 			</PdfViewerLicense>
 		</ClientOnly>

@@ -4,7 +4,9 @@
 		licenseKey?: string;
 	}>();
 	onBeforeMount(() => {
-		useLicense(props.licenseKey);
+		if (props.licenseKey) {
+			// useLicense(props.licenseKey);
+		}
 	});
 </script>
 <template><slot /></template>
